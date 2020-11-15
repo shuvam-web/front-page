@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Front Page</title>
+        <link rel="stylesheet" type="text/css" href="front-page.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+       <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <h2>Interior</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Bedroom</a></li>
+                    <li><a href="#">Dining</a></li>
+                    <li><a href="#">Kitchen</a></li>
+                    <li><a href="#">Backyard</a></li>
+                </ul>
+            </div>
+            <div class="form animate__animated animate__bounceInDown" id="get">
+                <i class="fa fa-times fa-3x" id="cross"></i>
+                 <h4>Register Here</h4>
+                <input type="text" placeholder="Name"><br>
+                <input type="text" placeholder="Email"><br>
+                <button class="btn">Register</button>
+            </div>
+            <div class="content">
+                <h1>Design Your House</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos in dicta <br>
+                    tempore non doloremque necessitatibus similique sit error porro id? Suscipit odit perferendis<br>
+                     recusandae quod id fugit dignissimos tempora alias.</p>
+                     <button class="animate__animated animate__bounceInLeft">Watch More</button>
+                     <button class="animate__animated animate__bounceInRight">Subscribe</button>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function(){
+                setTimeout(function(){
+                 $('#get').css('display','block');
+                },4000);
+                $('#cross').click(function(){
+                //    $('#get').css('display','none');
+                   $('#get').addClass("animate__animated animate__bounceOutUp");
+                });
+
+            })
+        </script>
+    </body>
+</html>
